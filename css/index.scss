@@ -1,0 +1,447 @@
+@import 'color.scss';
+@import 'mixin.scss';
+
+@keyframes effect-height {
+	from {
+		padding-block: 20px;
+	}
+	to {
+		padding-block: 10px;
+	}
+}
+.poppin {
+	font-family: 'Poppins', sans-serif;
+	h1,h2,h3,h4 {
+		font-family: 'Oswald', sans-serif;
+	}
+}
+.effect-margin {
+	margin-top: 5px;
+}
+.effect-height {
+	animation: 1s forwards effect-height;
+}
+.link {
+	margin-bottom: 10px;
+	a {
+		@include a__2;
+		h4 {
+			padding: 13px 35px;
+			@include text(14px,20px,#fff,20px,0);
+			background-color: $two-color;
+			font-weight: 300;
+			letter-spacing: 2px;
+			border-radius: 30px;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				background-color: $three-color;
+			}
+		}
+	}
+}
+.title__first {
+	h2 {
+		@include text(30px,33px,$four-color,20px,30px);
+	}
+}
+.paragraph__first {
+	p {
+		@include text(14px,20px,$five-color,0,10px);
+	}
+}
+.navbar__fixed {
+	position: fixed;
+	top: 0;
+}
+@keyframes option-effect {
+	from {
+		transform: translateX(-320px);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+.option-effect {
+	animation: 1s forwards option-effect;
+}
+.option {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	transform: translateX(-320px);
+	background-color: #fff;
+	z-index: 50;
+	padding-top: 80px;
+	&__body {
+		&-box {
+			@include list;
+			width: 320px;
+			&-item {
+				a {
+					@include a__1;
+					padding: 20px;
+					border-bottom: 1px solid $ten-color;
+					h3 {
+						@include text(18px,25px,$nine-color,0,0);
+						font-weight: 400;
+					}
+				}
+			}
+		}
+	}
+}
+.navbar {
+	position: relative;
+	z-index: 99;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+	background-color: #fff;
+	&__box {
+		padding: 20px 0;
+		display: flex;
+		&-menu {
+			button {
+				cursor: pointer;
+				padding: 1px 6px;
+				color: $three-color;
+				font-size: 24px;
+				border: none;
+				outline: none;
+				background-color: transparent;
+			}
+		}
+		&-buy {
+			a {
+				@include a__2;
+				padding-inline: 20px;
+				background-color: $two-color;
+				border-radius: 30px;
+				h3 {
+					@include text(14px,30px,#fff,0,0);
+					font-weight: 300;
+				}
+			}
+		}
+		&-menu, &-buy {
+			display: none;
+		}
+		&-left, &-right {
+			a {
+				@include a__2;
+				h3 {
+					@include text(14px,20px,$one-color,0,0);
+					padding: 15px;
+					background-image: linear-gradient(to right, $two-color 50%,$one-color 50%);
+					background-size: 200% 100%;
+					background-position-x: 100%;
+					-webkit-background-clip: text;
+					-moz-background-clip: text;
+					-o-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					transition: all 0.5s;
+					&:hover {
+						background-position-x: 0%; 
+					}
+				}
+			}
+		}
+	}
+}
+.effect-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.theme {
+	&__box {
+		position: relative;
+		background-image: url("../image/image-index/ezgif-2-ce434432a6.jpg");
+		background-size: 100% 70%;
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		height: 500px;
+	}
+	&__wrap {
+		&-title {
+			display: inline-block;
+			h1 {
+				@include text(48px,70px,#fff,20px,20px);
+				letter-spacing: 1px;
+			}
+		}
+		&-paragraph {
+			p {
+				@include text(14px,20px,#fff,0,10px);
+				letter-spacing: 1px;
+			}
+		}
+	}
+}
+.radial-effect {
+				position: relative;
+				&::before {
+					content: "";
+					position: absolute;
+					top: 100%;
+					left: 5%;
+					height: 10px;
+					width: 90%;
+					opacity: 0;
+					background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+					transition: all 0.3s;
+				}
+}
+.pages {
+	padding-top: 110px;
+	&__box {
+		margin-top: 60px;
+		a {
+			@include a__1;
+			.pages__box-img {
+				height: 500px;
+				box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.07);
+			}
+			.img-1 {
+				background-image: url("../image/image-index/homepage.jpg");
+			}
+			.img-2 {
+				background-image: url("../image/image-index/collec1.jpg");
+			}
+			.img-3 {
+				background-image: url("../image/image-index/collec2.jpg");
+			}
+			.img-4 {
+				background-image: url("../image/image-index/collec3.jpg");
+			}
+			.img-5 {
+				background-image: url("../image/image-index/collec4.jpg");
+			}
+			.img-6 {
+				background-image: url("../image/image-index/collec5.jpg");
+			}
+			.img-7 {
+				background-image: url("../image/image-index/product1.jpg");
+			}
+			.img-8 {
+				background-image: url("../image/image-index/product2.jpg");
+			}
+			.img-9 {
+				background-image: url("../image/image-index/product3.jpg");
+			}
+			.img-10 {
+				background-image: url("../image/image-index/product4.jpg");
+			}
+			.img-11 {
+				background-image: url("../image/image-index/product5.jpg");
+			}
+			.img-12 {
+				background-image: url("../image/image-index/product6.jpg");
+			}
+			.img-13 {
+				background-image: url("../image/image-index/blog1.jpg");
+			}
+			.img-14 {
+				background-image: url("../image/image-index/blog2.jpg");
+			}
+			.img-15 {
+				background-image: url("../image/image-index/blog3.jpg");
+			}
+			.img-16 {
+				background-image: url("../image/image-index/blog-post.jpg");
+			}
+			.img-17 {
+				background-image: url("../image/image-index/contact.jpg");
+			}
+			.img-18 {
+				background-image: url("../image/image-index/about.jpg");
+			}
+			.img-19 {
+				background-image: url("../image/image-index/faq.jpg");
+			}
+			.img-20 {
+				background-image: url("../image/image-index/test.jpg");
+			}
+			.img-21 {
+				background-image: url("../image/image-index/timeline.jpg");
+			}
+			.no-bg {
+				background-repeat: no-repeat;
+			}
+			.page__box-effect1 {
+				position: relative;
+				background-position-y: 0%;
+				transform: translateY(0);
+			}
+			.time-1 {
+				transition: background-position-y 5s, transform 0.3s;
+			}
+			h3 {
+				@include text(16px,20px,$six-color,40px,0);
+				transition: all 0.3s;
+			}
+			&:hover {
+				.page__box-effect1 {
+					background-position-y: 100%;
+					transform: translateY(-3px);
+				}
+				.radial-effect {
+					&::before {
+						opacity: 1;
+					}
+				}
+				h3 {
+					color: $two-color;
+				}
+			}
+		}
+	}
+}
+.power {
+	margin-top: 120px;
+	padding: 110px 0 100px;
+	background-color: $seven-color;
+	&__box {
+		min-height: 250px;
+		padding: 20px;
+		margin-bottom: 30px;
+		color: $four-color;
+		border-radius: 10px;
+		background-color: #fff;
+		&-icon {
+			font-size: 40px;
+		}
+		h3 {
+			@include text(18px,28px,$four-color,10px,20px);
+		}
+		p {
+			@include text(14px,20px,$eight-color,0,14px);
+		}
+	}
+}
+.end {
+	position: relative;
+	margin-top: 100px;
+	background-image: url("../image/image-index/ezgif-4-0c4f7acbef.jpg");
+	background-position: center;
+	background-size: cover;
+	min-height: 500px;
+	&__body {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		&-subtitle {
+			p {
+				@include text(30px,42.84px,#fff,0,10px);
+			}
+		}
+		&-title {
+			h2 {
+				@include text(48px,68.56px,#fff,0,30px);
+			}
+		}
+
+	}
+}
+@media (max-width: 74.9375em) {
+
+}
+@media (max-width: 61.9375em) {
+	.navbar {
+		&__box {
+			align-items: center;
+			&-left, &-right {
+				display: none;
+			}
+			&-menu, &-buy {
+				display: block;
+			}
+			&-buy {
+				a {
+					padding: 10px 20px;
+					h3 {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+	.pages {
+		&__box {
+			&-img {
+				background-repeat: no-repeat;
+				background-position-x: 50%;
+			}
+		}
+	}
+	.end {
+		&__body {
+			margin-right: -50%;
+		}
+	}
+}
+@media (max-width: 47.9375em) {
+	.navbar {
+		&__box {
+			&-buy {
+				a {
+					h3 {
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 35.9375em) {
+	.navbar {
+		&__box-center {
+			a {
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.theme {
+		&__box {
+			background-size: cover;
+			background-position: 80% 88%;
+			height: 400px;
+		}
+		&__wrap {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			&-title {
+				h1 {
+					font-size: 28px;
+					line-height: 40px;
+				}
+			}
+		}
+	}	
+	.end {
+		&__body {
+			&-title {
+				h2 {
+					font-size: 30px;
+				}
+			}
+			&-subtitle {
+				p {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 25em) {
+	.title__first {
+		h2 {
+			font-size: 23px;
+			line-height: 4px;
+		}
+	}	
+}

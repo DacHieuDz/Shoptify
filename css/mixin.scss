@@ -1,0 +1,19 @@
+@mixin text($font-size, $line-height, $color, $margin-top, $margin-bottom) {
+	font-size: $font-size;
+	line-height: $line-height;
+	color: $color;
+	margin: $margin-top 0 $margin-bottom;
+}
+@mixin a__1 {
+	display: block;
+	text-decoration: none;
+}
+@mixin a__2 {
+	display: inline-block;
+	text-decoration: none;
+}
+@mixin list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
