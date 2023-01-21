@@ -7,6 +7,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -102,14 +104,91 @@
 								<li class="menu__nav-list-item"><a href="">
 									<span class="menu__nav-list-item-active">Home</span>
 								</a></li>
-								<li class="menu__nav-list-item"><a href="" class="menu__nav-list-item-arrow">
+								<li class="menu__nav-list-item menu__nav-list-item-show"><a href="" class="menu__nav-list-item-arrow">
 									<span class="menu__nav-list-item-effect">Shop</span>
 									<span class="menu__nav-list-item-price menu__nav-list-item-price-blue">new</span>
-								</a></li>
+								</a>
+								<div class="menu__show">
+									<div class="container">
+										<div class="row gutter-10">
+											<div class="col-xl-5 plr-10">
+												<div class="row">
+													<div class="col-xl-6">
+														<div class="menu__show-body">
+															<div class="menu__show-body-title">
+																<a href="">Products</a>
+															</div>
+															<ul class="menu__show-body-list">
+																<li class="menu__show-body-list-item"><a href="">Product Classic</a></li>
+																<li class="menu__show-body-list-item"><a href="">Product Thumblist Left</a></li>
+																<li class="menu__show-body-list-item"><a href="">Product Thumblist Right</a></li>
+																<li class="menu__show-body-list-item"><a href="">
+																	Product Sticky
+																</a></li>
+																<li class="menu__show-body-list-item"><a href="">Product Grid</a></li>
+																<li class="menu__show-body-list-item"><a href="">Product Slide</a></li>
+															</ul>
+														</div>
+													</div>
+													<div class="col-xl-6">
+														<div class="menu__show-body">
+															<div class="menu__show-body-title">
+																<a href="">Collections</a>
+															</div>
+															<ul class="menu__show-body-list">
+																<li class="menu__show-body-list-item"><a href="">Sidebar Left</a></li>
+																<li class="menu__show-body-list-item"><a href="">Sidebar Right</a></li>
+																<li class="menu__show-body-list-item"><a href="">Full Width</a></li>
+																<li class="menu__show-body-list-item"><a href="">
+																	Infinity Scroll
+																</a></li>
+																<li class="menu__show-body-list-item"><a href="">Masonry</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-7 plr-10">
+												<div class="row">
+													<div class="col-xl-6 plr-10">
+														<div class="menu__show-img">
+															<div class="menu__show-img-effect">
+																<a href="">
+																	<img src="image/image-collection/menu1.jpg" alt="">
+																</a>
+															</div>
+															<p>2021 Collections</p>
+														</div>
+													</div>
+													<div class="col-xl-6 plr-10">
+														<div class="menu__show-img">
+															<div class="menu__show-img-effect">
+																<a href="">
+																	<img src="image/image-collection/menu2.jpg" alt="">
+																</a>
+															</div>
+															<p>Get up to 25% off</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								</li>
 								<li class="menu__nav-list-item"><a class="menu__nav-list-item-arrow" href="">
 									<span class="menu__nav-list-item-effect">Blogs</span>
 									<span class="menu__nav-list-item-price menu__nav-list-item-price-red">hot</span>
-								</a></li>
+								</a>
+									<div class="menu__blog">
+										<ul class="menu__blog-list">
+											<li class="menu__blog-list-item"><a href="">Blog Sidebar</a></li>
+											<li class="menu__blog-list-item"><a href="">Blog Masony</a></li>
+											<li class="menu__blog-list-item"><a href="">Blog Fullwidth</a></li>
+											<li class="menu__blog-list-item"><a href="">Blog Post</a></li>
+										</ul>
+									</div>
+								</li>
 								<li class="menu__nav-list-item"><a href="">
 									<span class="menu__nav-list-item-effect">Contact</span>
 								</a></li>
@@ -127,7 +206,20 @@
 								</a></li>
 								<li class="menu__nav-list-item menu__nav-list-item-not-border"><a href="" class="menu__nav-list-item-arrow">
 									<span class="menu__nav-list-item-effect">Pages</span>
-								</a></li>
+								</a>
+								<div class="menu__blog">
+										<ul class="menu__blog-list">
+											<li class="menu__blog-list-item"><a href="">About us</a></li>
+											<li class="menu__blog-list-item"><a href="">About us v2</a></li>
+											<li class="menu__blog-list-item"><a href="">404 Page</a></li>
+											<li class="menu__blog-list-item"><a href="">FAQ Page</a></li>
+											<li class="menu__blog-list-item"><a href="">Reviews</a></li>
+											<li class="menu__blog-list-item"><a href="">Timeline
+											<span>hot</span>
+											</a></li>
+										</ul>
+									</div>	
+								</li>
 							</ul>
 						</nav>
 					</div>
@@ -135,8 +227,1648 @@
 			</div>
 		</section>
 	</header>
-	<main>
-		
+	<main class="bg-color">
+		<section class="special">
+			<div class="container">
+				<div class="row gutter-10">
+					<div class="col-xl-12 plr-10">
+						<div class="special__body text-center">
+							<div class="special__body-title">
+								<h1>SELECT YOUR VEHICLE</h1>
+							</div>
+							<div class="special__body-paragraph">
+								<p>Customize, Modify, Upgrade, Repair, Replace</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row gutter-10">
+						<div class="special__col">
+							<form action="">
+								<select name="" id="">
+									<option value="">Select Collection</option>
+									<option value="">Air Intake Systems</option>
+									<option value="">Body Kits</option>
+									<option value="">Brakes & Rotors</option>
+									<option value="">Chorme Trim</option>
+									<option value="">Custom Grilles</option>
+									<option value="">Custom Hoods</option>
+									<option value="">Custom Wheels</option>
+									<option value="">Exhaust Systems</option>
+									<option value="">Floor Mats</option>
+									<option value="">Off-Road Bumpers</option>
+									<option value="">Running boards</option>
+									<option value="">Suspension Systems</option>
+								</select>
+							</form>	
+						</div>
+						<div class="special__col">
+							<form action="">
+								<select name="" id="">
+									<option value="">Select Make</option>
+									<option value="">Audi</option>
+									<option value="">Bmw</option>
+									<option value="">Bugatti</option>
+									<option value="">Ford</option>
+									<option value="">Ferrari</option>
+								</select>
+							</form>
+						</div>
+						<div class="special__col">
+							<form action="">
+								<select name="" id="">
+									<option value="">Select Year</option>
+									<option value="">2021</option>
+									<option value="">2020</option>
+									<option value="">2019</option>
+									<option value="">2018</option>
+									<option value="">2017</option>
+									<option value="">2016</option>
+									<option value="">2015</option>
+									<option value="">2014</option>
+									<option value="">2013</option>
+									<option value="">2012</option>
+								</select>
+							</form>
+						</div>
+						<div class="special__col">
+							<form action="">
+								<select name="" id="">
+									<option value="">Select Price</option>
+									<option value="">Under $50</option>
+									<option value="">$50 - $100</option>
+									<option value="">$100 - $200</option>
+									<option value="">$200 - $400</option>
+									<option value="">Above $400</option>
+								</select>
+							</form>
+						</div>
+						<div class="special__col">
+							<a href="">
+								GO
+							</a>
+						</div>
+					</div>
+			</div>
+		</section>
+		<section class="show">
+			<div class="container">
+				<div class="row gutter-10">
+					<div class="col-xl-2-4 plr-10">
+						<div class="show__body">
+							<div class="show__body-img">
+								<img src="image/image-collection/view-0.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2-4 plr-10">
+						<div class="show__body">
+							<div class="show__body-img">
+								<img src="image/image-collection/view-1.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2-4 plr-10">
+						<div class="show__body">
+							<div class="show__body-img">
+								<img src="image/image-collection/view-2.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2-4 plr-10">
+						<div class="show__body">
+							<div class="show__body-img">
+								<img src="image/image-collection/view-3.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2-4 plr-10">
+						<div class="show__body">
+							<div class="show__body-img">
+								<img src="image/image-collection/view-4.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="advice">
+			<div class="container">
+				<div class="row gutter-10">
+					<div class="col-xl-6 plr-10">
+						<div class="advice__body">
+							<a href="">
+								<img src="image/image-collection/advice-1.jpg" alt="advice-1">
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-6 plr-10">
+						<div class="advice__body">
+							<a href="">
+								<img src="image/image-collection/advice-2.jpg" alt="adivce-2">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="product">
+			<div class="container">
+				<div class="row no-gutter">
+					<div class="col-xl-12 pd-0">
+						<div class="product__body">
+							<div class="product__body-title">
+								<h3>TOP CATEGORIES</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="row gutter-10">
+						<div class="col-xl-2 plr-10">
+							<div class="product__box">
+								<div class="product__box-img">
+									<a href="">
+										<img src="image/image-collection/product-1.jpg" alt="1">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 plr-10">
+							<div class="product__box">
+								<div class="product__box-img">
+									<a href="">
+										<img src="image/image-collection/product-2.jpg" alt="2">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 plr-10">
+							<div class="product__box">
+								<div class="product__box-img">
+									<a href="">
+										<img src="image/image-collection/product-3.jpg" alt="3">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 plr-10">
+							<div class="product__box">
+								<div class="product__box-img">
+									<a href="">
+										<img src="image/image-collection/product-4.jpg" alt="4">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 plr-10">
+							<div class="product__box">
+								<div class="product__box-img">
+									<a href="">
+										<img src="image/image-collection/product-5.jpg" alt="5">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 plr-10">
+							<div class="product__box">
+								<div class="product__box-img">
+									<a href="">
+										<img src="image/image-collection/product-6.jpg" alt="6">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 plr-10">
+							<div class="product__box">
+								<div class="product__box-img">
+									<a href="">
+										<img src="image/image-collection/product-7.jpg" alt="7">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 plr-10">
+							<div class="product__box">
+								<div class="product__box-img">
+									<a href="">
+										<img src="image/image-collection/product-8.jpg" alt="8">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 plr-10">
+							<div class="product__box">
+								<div class="product__box-img">
+									<a href="">
+										<img src="image/image-collection/product-9.jpg" alt="9">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 plr-10">
+							<div class="product__box">
+								<div class="product__box-img">
+									<a href="">
+										<img src="image/image-collection/product-10.jpg" alt="10">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 plr-10">
+							<div class="product__box">
+								<div class="product__box-img">
+									<a href="">
+										<img src="image/image-collection/product-11.jpg" alt="11">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 plr-10">
+							<div class="product__box">
+								<div class="product__box-img">
+									<a href="">
+										<img src="image/image-collection/product-12.jpg" alt="12">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</section>
+		<section class="produce">
+			<div class="container">
+				<div class="row no-gutter">
+					<div class="col-xl-12 pd-0">
+						<div class="product__body">
+							<div class="product__body-title">
+								<h3>Deal of the day</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row no-gutter">
+					<div class="produce__slider">
+						<div class="produce-effect">
+							<div>
+								<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-1.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-11.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Square</p>
+										<a href="">Voll Backpack</a>
+										<span>$360.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-2.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-12.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Propper®</p>
+										<a href="">Suede Trainers</a>
+										<span>$370.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-3.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-13.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>John Varvatos</p>
+										<a href="">Phasellus urna dolor</a>
+										<span>$199.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-4.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-14.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Gradient</p>
+										<a href="">Tassle Slip On</a>
+										<span>$80.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-5.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-15.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Square</p>
+										<a href="">Boxy Runway T-1080i</a>
+										<span>$340.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-6.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-16.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Square</p>
+										<a href="">Aliquam commodo ligula</a>
+										<span>$240.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-7.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-17.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Propper</p>
+										<a href="">Suede Trainers</a>
+										<span>$370.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-8.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-18.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>John Varvatos</p>
+										<a href="">Phasellus urna dolor</a>
+										<span>$199.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-9.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-19.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Square</p>
+										<a href="">Puffy Jacket</a>
+										<span>$150.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-10.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-20.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Gradient</p>
+										<a href="">Ottoto Arezzo</a>
+										<span>$660.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="brand">
+			<div class="container">
+				<div class="row gutter-10">
+					<div class="col-xl-4 plr-10">
+						<div class="brand__body">
+							<div class="brand__body-img">
+								<img src="image/image-collection/brand-1.jpg" alt="b1">
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 plr-10">
+						<div class="brand__body">
+							<div class="brand__body-img">
+								<img src="image/image-collection/brand-2.jpg" alt="b2">
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 plr-10">
+						<div class="brand__body">
+							<div class="brand__body-img">
+								<img src="image/image-collection/brand-3.jpg" alt="b3">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="energy">
+			<div class="container">
+				<div class="row no-gutter">
+					<div class="col-xl-12 pd-0">
+						<div class="product__body">
+							<div class="product__body-title">
+								<h3>Featured Products</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row gutter-10 text-center">
+					<div class="col-xl-2">
+						<div class="energy__body">
+							<a href="#" class="energy__body-img">
+								<img src="image/image-collection/energy-1.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-2">
+						<div class="energy__body">
+							<a href="#" class="energy__body-img">
+								<img src="image/image-collection/energy-2.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-2">
+						<div class="energy__body">
+							<a href="#" class="energy__body-img">
+								<img src="image/image-collection/energy-3.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-2">
+						<div class="energy__body">
+							<a href="#" class="energy__body-img">
+								<img src="image/image-collection/energy-4.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-2">
+						<div class="energy__body">
+							<a href="#" class="energy__body-img">
+								<img src="image/image-collection/energy-5.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-2">
+						<div class="energy__body">
+							<a href="#" class="energy__body-img">
+								<img src="image/image-collection/energy-6.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-2">
+						<div class="energy__body">
+							<a href="#" class="energy__body-img">
+								<img src="image/image-collection/energy-7.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-2">
+						<div class="energy__body">
+							<a href="#" class="energy__body-img">
+								<img src="image/image-collection/energy-8.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-2">
+						<div class="energy__body">
+							<a href="#" class="energy__body-img">
+								<img src="image/image-collection/energy-9.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-2">
+						<div class="energy__body">
+							<a href="#" class="energy__body-img">
+								<img src="image/image-collection/energy-10.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-2">
+						<div class="energy__body">
+							<a href="#" class="energy__body-img">
+								<img src="image/image-collection/energy-1.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-2">
+						<div class="energy__body">
+							<a href="#" class="energy__body-img">
+								<img src="image/image-collection/energy-1.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="mobile">
+			<div class="container">
+				<div class="row no-gutter">
+					<div class="col-xl-12 pd-0">
+						<div class="product__body">
+							<div class="product__body-title">
+								<h3>
+									Featured Products
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row no-gutter mobile__row">
+					<div class="col-xl-12 plr-10">
+						<ul class="mobile__list">
+							<li class="mobile__list-item">
+								<a href class="mobile__list-active">Best Sellers</a>
+							</li>
+							<li class="mobile__list-item">
+								<a href="">New Arrivals</a>
+							</li>
+							<li class="mobile__list-item">
+								<a href="">Hot Products</a>
+							</li>	
+						</ul>
+					</div>
+					<div class="col-xl-12 pd-0 pt-40 pb-70">
+						<div class="mobile__body">
+							<div class="mobile__body-slider-1">
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-10.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-20.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Square</p>
+										<a href="">Boxy Runway T-1080i</a>
+										<span>$340.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-7.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-17.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Propper®</p>
+										<a href="">Suede Trainers</a>
+										<span>$370.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-8.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-18.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>John Varvatos</p>
+										<a href="">Phasellus urna dolor</a>
+										<span>$199.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-9.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-19.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Gradient</p>
+										<a href="">Tassle Slip On</a>
+										<span>$80.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/mobile-1.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/mobile-11.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Propper®</p>
+										<a href="">Fanny Pack</a>
+										<span>$170.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-3.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-13.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Square</p>
+										<a href="">Flared Skirts</a>
+										<span>$290.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-4.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-14.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Square</p>
+										<a href="">Puffy Jacket</a>
+										<span>$150.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/mobile-2.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/mobile-12.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>John Varvatos</p>
+										<a href="">Glasses Dhillon lue</a>
+										<span>$180.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-5.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-15.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Gradient</p>
+										<a href="">Ottoto Arezzo</a>
+										<span>$660.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/mobile-3.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/mobile-13.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>John Varvatos</p>
+										<a href="">Kam Dhillon 3086</a>
+										<span>$140.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/mobile-4.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/mobile-14.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Propper®</p>
+										<a href="">Kam Dhillon 3086 Atlas</a>
+										<span>$150.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/mobile-5.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/mobile-15.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Propper®</p>
+										<a href="">Joseph Marc 4145</a>
+										<span>$340.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="mobile__body-slider-2">
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-6.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-16.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Square</p>
+										<a href="">Voll Backpack</a>
+										<span>$360.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-7.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-17.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Propper®</p>
+										<a href="">Suede Trainers</a>
+										<span>$370.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-8.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-18.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>John Varvatos</p>
+										<a href="">Phasellus urna dolor</a>
+										<span>$199.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-9.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-19.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Gradient</p>
+										<a href="">Tassle Slip On</a>
+										<span>$80.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/mobile-1.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/mobile-11.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Propper®</p>
+										<a href="">Fanny Pack</a>
+										<span>$170.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-1.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-11.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Square</p>
+										<a href="">Aliquam commodo ligula</a>
+										<span>$240.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-2.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-12.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Propper®</p>
+										<a href="">Victory Short</a>
+										<span>Sold out</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-3.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-13.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Square</p>
+										<a href="">Flared Skirts</a>
+										<span>$290.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-4.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-14.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Square</p>
+										<a href="">Puffy Jacket</a>
+										<span>$150.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-5.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-15.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Gradient</p>
+										<a href="">Ottoto Arezzo</a>
+										<span>$660.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/mobile-3.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/mobile-13.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>John Varvatos</p>
+										<a href="">Kam Dhillon 3086</a>
+										<span>$140.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/mobile-5.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/mobile-15.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Propper®</p>
+										<a href="">Joseph Marc 4145</a>
+										<span>$340.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="mobile__body-slider-3">
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/mobile-6.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/mobile-16.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Square</p>
+										<a href="">Jones New York J751</a>
+										<span>$50.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/mobile-7.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/mobile-17.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Gradient</p>
+										<a href="">Coach HC6065</a>
+										<span>$100.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/mobile-8.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/mobile-18.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>John Varvatos</p>
+										<a href="">Converse Spare Change</a>
+										<span>$640.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-3.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-13.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Square</p>
+										<a href="">Flared Skirts</a>
+										<span>$290.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/slider-4.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/slider-14.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Square</p>
+										<a href="">Puffy Jacket</a>
+										<span>$150.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/mobile-4.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/mobile-14.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Propper®</p>
+										<a href="">Joseph Marc 4145</a>
+										<span>$340.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+								<div>
+									<div class="produce__slider-body">
+									<div class="produce__slider-body-img-first">
+										<img src="image/image-collection/mobile-9.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-img-second">
+										<img src="image/image-collection/mobile-19.jpg" alt="">
+									</div>
+									<div class="produce__slider-body-icon">
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-heart"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-brands fa-searchengin"></i>
+										</div>
+										<div class="produce__slider-body-icon-item">
+											<i class="fa-solid fa-rotate"></i>
+										</div>
+									</div>
+									<div class="produce__slider-body-info">
+										<p>Propper®</p>
+										<a href="">Joseph Marc 4140</a>
+										<span>$300.00</span>
+									</div>
+									<div class="produce__slider-body-cart">
+										<span class="text-center">Add to cart</span>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 	<footer>
 		
@@ -164,6 +1896,81 @@
 			</div>
 		</div>
 	</div>
+	<div class="modal">
+		<div class="modal__body">
+			<div class="row no-gutter">
+				<div class="col-xl-6 pd-0">
+					<div class="modal__body-img"></div>
+				</div>
+				<div class="col-xl-6 pd-0">
+					<div class="modal__body-box">
+						<div class="modal__body-box-title">
+							<h4>NEWSLETTER SIGN UP</h4>
+						</div>
+						<div class="modal__body-box-paragraph">
+							<p>Sign up today and receive 10% off your first order.</p>
+						</div>
+						<div class="modal__body-box-form">
+							<form action="">
+								<div class="modal__body-box-form-effect">
+									<input type="email" placeholder="Your Email">
+									<button>
+										Subscribe
+									</button>
+								</div>
+							</form>
+							<div class="modal__body-box-form-check">
+								<span>* Vui lòng nhập email của bạn</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.produce-effect').slick({
+				infinite: true,	
+				slidesToShow: 5,
+				slidesToScroll: 5,
+				arrows: false
+			});
+		});
+		$(document).ready(function(){
+			$('.mobile__body-slider-1').slick({
+				infinite: true,	
+				slidesToShow: 5,
+				slidesToScroll: 5,
+				autoplay: true,
+				autoplaySpeed: 5000,
+				arrows: false
+			});
+		});
+		$(document).ready(function(){
+			$('.mobile__body-slider-2').slick({
+				infinite: true,	
+				slidesToShow: 5,
+				slidesToScroll: 5,
+				autoplay: true,
+				autoplaySpeed: 5000,
+				arrows: false
+			});
+		});
+		$(document).ready(function(){
+			$('.mobile__body-slider-3').slick({
+				infinite: true,
+				slidesToShow: 5,
+				slidesToScroll: 5,
+				autoplay: true,
+				autoplaySpeed: 5000,
+				arrows: false
+			});
+		});
+	</script>
 	<script src="js/script1.js"></script>
 </body>
 </html>

@@ -1,7 +1,6 @@
 let boxElement = document.querySelector(".navbar__box");
 let navbarElement = document.querySelector(".navbar");
 let aElement = boxElement.querySelector(".navbar__box-center a");
-console.log(aElement);
 window.onscroll = function() {
 	if(document.documentElement.scrollTop < 262) {
 		aElement.classList.remove("effect-margin");
@@ -20,3 +19,17 @@ let optionElement = navbarElement.nextElementSibling;
 buttonElement.addEventListener("click", () => {
 	optionElement.classList.toggle("option-effect");
 });
+
+function loadStorage() {
+	if(!localStorage.getItem("data")) {
+		let animationElement = document.querySelector(".animation");
+		animationElement.classList.add("load-effect");
+		localStorage.setItem("data", 1);	
+	}
+}
+(() => {
+	loadStorage();
+})();
+
+
+

@@ -28,9 +28,6 @@ body::-webkit-scrollbar-thumb:hover {
 .ptr-16 {
   padding-block: 16px; }
 
-.plr-10 {
-  padding-inline: 10px; }
-
 .container-fluid {
   width: 100%;
   padding: 0 15px; }
@@ -42,6 +39,9 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 0 -15px;
   display: flex;
   flex-wrap: wrap; }
+
+.gutter-10 {
+  margin: 0 -10px; }
 
 .no-gutter {
   margin-inline: 0; }
@@ -57,6 +57,11 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 0 15px;
   position: relative; }
 
+.col-xl-6 {
+  width: 50%;
+  padding: 0 15px;
+  position: relative; }
+
 .col-xl-8 {
   width: calc(800% / 12);
   padding: 0 15px;
@@ -67,8 +72,18 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 0 15px;
   position: relative; }
 
+.col-xl-7 {
+  width: calc(700% / 12);
+  padding: 0 15px;
+  position: relative; }
+
 .col-xl-2 {
   width: calc(50% / 3);
+  padding: 0 15px;
+  position: relative; }
+
+.col-xl-2-4 {
+  width: 20%;
   padding: 0 15px;
   position: relative; }
 
@@ -90,8 +105,20 @@ body::-webkit-scrollbar-thumb:hover {
 .none-relative {
   position: static; }
 
+.plr-10 {
+  padding-inline: 10px; }
+
+.plr-5 {
+  padding-inline: 5px; }
+
 .mt-50 {
   margin-top: 50px; }
+
+.pt-40 {
+  padding-top: 40px; }
+
+.pb-70 {
+  padding-bottom: 70px; }
 
 .pd-0 {
   padding-inline: 0; }
